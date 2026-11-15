@@ -1,0 +1,16 @@
+[package]
+name = "orbit-desktop"
+version = "3.0.0"
+edition = "2021"
+license = "MIT"
+description = "Orbit desktop launcher"
+
+[[bin]]
+name = "Orbit"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = "s"
+lto = true
+strip = true
+panic = "abort"
